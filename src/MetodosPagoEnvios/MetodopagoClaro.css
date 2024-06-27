@@ -1,0 +1,118 @@
+:root {
+    --black: #070410;
+    --Tropicalindigo: #9a8be5;
+    --darkp: #0E0821;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7d7; 
+}
+
+#toggle{
+    display: none;
+}
+#label_toggle{
+    position: absolute;
+    top:80px;
+    left:30px;
+    font-size: 2em;
+    color: var(--Tropicalindigo);
+    cursor: pointer;
+}
+.container-pago {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.envios a {
+    color: var(--Tropicalindigo);
+    text-decoration: none; 
+}
+.envios p,
+.medios-pago p {
+    color: #504f4f;
+}
+.envios h2, .envios h3,
+.medios-pago h2, .medios-pago h3,
+.medios-pago-imagenes h3  {
+    margin-top: 10px;
+    color: #5e50ba;
+    text-align: start; 
+}
+.medios-pago-imagenes h3  {
+    color: #5e50ba;
+    text-align: center;
+}
+.envios, 
+.medios-pago {
+    margin-bottom: 30px;
+    color: rgb(121, 120, 120);
+    margin-left: 90px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.medios-pago-imagenes {
+    text-align: center;
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-methods img {
+    width: 100px;
+    height: 35px;
+    margin: 0 10px;
+}
+.return-link {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #7e68ed;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.return-link:hover {
+    background-color: #2e1e58;
+    border-color: #2e1e58;
+    color: #fff;
+}
+.return-link:active {
+    background-color: #2e1e58;
+    border-color: #2e1e58;
+}
+@media (max-width: 768px) {
+    #label_toggle{
+        margin-left:120px;
+    }
+    .container-pago {
+        width: 90%; 
+    }
+
+    .envios,
+    .medios-pago {
+        margin-left: 0;
+    }
+
+    .payment-methods {
+        margin-top: 10px; 
+    }
+
+    .payment-methods img {
+        width: 80px; 
+    }
+}

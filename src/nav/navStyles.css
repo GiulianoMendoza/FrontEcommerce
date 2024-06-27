@@ -1,0 +1,95 @@
+:root {
+  --black: #070410;
+  --Tropicalindigo: #9a8be5;
+  --darkp: #0E0821;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header{
+	width: 100%;
+  background: var(--darkp)
+}
+
+.texto{
+  color: var(--Tropicalindigo);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 60px;
+  margin-left: 10px;
+}
+.tituloNav{
+  font-size: 40px;
+  margin-bottom: -10px;
+
+}
+
+.left-links {
+    float: left;
+    margin-right: 25px;
+    list-style: none;
+  }
+  
+.right-link {
+  float: right;
+}
+
+.menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navegacion{
+  box-shadow: 0 0.1rem var(--Tropicalindigo);
+}
+.navegacion ul{
+	list-style: none;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 20px 20px;
+	color: var(--Tropicalindigo);
+  font-size: 23px;
+	text-decoration: none;
+}
+.menu-opciones a i {
+  margin-right: 8px;
+}
+.menu-opciones:hover{
+	background-color: rgba(138, 138, 138, 0.44);;
+	transition: all .3s;
+}
+@media (max-width: 768px) {
+  .tituloNav {
+    font-size: 30px;
+  }
+
+  .menu > li > a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 468px) {
+  .tituloNav {
+    font-size: 20px;
+  }
+
+  .menu > li > a {
+    margin-top: 6px;
+    font-size: 14px;
+  }
+}

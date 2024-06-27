@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../logo.png">
+    <title>Listado de Ventas por Día</title>    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link id= "salerender-stylesheet" rel="stylesheet" href="/src/sale/saleCSS/ventasRender.css">
+    <link rel="stylesheet" href="/src/nav/navStyles.css">
+    <link rel="stylesheet" href="/src/footer/footerStyles.css">
+    <link id= "detail-stylesheet" rel="stylesheet" href="/src/sale/saleCSS/detalleVenta.css">
+</head>
+<body>
+    <header class="row">
+        <div class="col">
+            <div id="navPrincipal"></div>
+        </div>
+    </header>
+    <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+    <input type="checkbox" name="" id="toggle">
+    <h1>Listado de Ventas por Fecha</h1>
+    <br>
+    <a class="return-link" href="/index.html">&lt; COMPRAR</a>       
+    <p class="range-text">Podrá enlistar las ventas según un rango de fechas.</p>
+    <p id="mostrarFechas">Esta viendo Desde <span id="fechaDesde"></span> Hasta <span id="fechaHasta"></span>.</p>
+    <div class="container">
+        <div class="input-container">
+            <label for="fechaDesdeInput">Desde:</label>
+            <input type="date" id="fechaDesdeInput">
+        </div>
+        <div class="input-container">
+            <label for="fechaHastaInput">Hasta:</label>
+            <input type="date" id="fechaHastaInput">
+        </div>
+        <button id="buscarVentas">Buscar Ventas</button>
+    </div>
+    <div id="listaVentas" class="lista-ventas"></div>
+    <div id="ventaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Detalle de Venta</h2>
+            <div id="ventaDetalle"></div>
+        </div>
+    </div>
+    <div id="footer-general"></div>
+
+    <script type="module" src="./GeneradorRender.js"></script>
+    <script type="module" src="/src/nav/Navrender.js"></script>
+    <script type="module" src="/src/footer/Footer.js"></script>
+    <script type="module" src="/src/Mode/mode.js"></script>
+</body>
+</html>

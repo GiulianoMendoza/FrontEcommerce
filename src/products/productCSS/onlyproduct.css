@@ -1,0 +1,120 @@
+:root {
+    --black: #070410;
+    --Tropicalindigo: #9a8be5;
+    --darkp: #0E0821;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+#product-container {
+    margin: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;        
+}
+
+.product {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 20px; 
+    padding: 10px;
+}
+.product :hover{
+    box-shadow: 0 0px 10px var(--Tropicalindigo);
+}
+.product img {
+    border: 1px solid #393161;
+    height: 450px;
+    width: 450px;
+}
+
+.product-info {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-left: 20px;
+}
+
+.product-info > * {
+    color: #c5c1c1;
+    margin-bottom: 10px;
+}
+.return-link {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #7e68ed;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.return-link:hover {
+    background-color: #2e1e58;
+    border-color: #2e1e58;
+    color: #fff;
+}
+.return-link:active {
+    background-color: #2e1e58;
+    border-color: #2e1e58;
+}
+#addToCartButton {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: #c5c1c1;
+    background-color: #7e68ed;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+#addToCartButton:hover {
+    background-color: #2e1e58;
+    border-color: #2e1e58;
+    color: #c5c1c1;
+}
+.buy-button{
+    border: 1px solid var(--Tropicalindigo);    
+}
+
+
+
+@media (max-width: 768px) {
+    #product-container {
+        margin: 20px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0; 
+        padding: 5px;
+    }    
+    .product img {
+        border: 1px solid #393161;
+        max-width: 100%; 
+        height: auto; 
+    }
+    
+    .product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-top: 10px; 
+    }
+    
+    .return-link {
+        position: static;
+        margin-top: 10px;
+        margin-left: 600px;
+    }
+    
+}

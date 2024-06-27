@@ -1,0 +1,75 @@
+
+#toggle{
+    display: none;
+}
+#label_toggle{
+    position: absolute;
+    top:80px;
+    left:30px;
+    font-size: 2em;
+    color: var(--Tropicalindigo);
+    cursor: pointer;
+}
+.ui-search-filter,
+.ui-sort-filter {
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.ui-search-filter h3,
+.ui-sort-filter h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ui-search-filter ul,
+.ui-sort-filter ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ui-search-filter-container.selected,
+.ui-sort-filter-container.selected {
+    background-color:var(--Tropicalindigo)
+}
+.ui-search-filter-container,
+.ui-sort-filter-container {
+    cursor: pointer;
+    color: #000000;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+.ui-search-filter-container:hover,
+.ui-sort-filter-container:hover {
+    background-color: #7e68ed;
+}
+#search-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border: 2px solid #8269fd;
+    background-color: var(--black);
+    color: var(--Tropicalindigo);
+}
+.ui-search-filter-container::after,
+.ui-sort-filter-container::after {
+    content: '>';
+    float: right;
+    transition: transform 0.3s ease;
+    
+}
+
+.ui-search-filter-container.selected::after,
+.ui-sort-filter-container.selected::after {
+    transform: rotate(180deg);
+}
+
+
+

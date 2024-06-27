@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="/src/footer/footerStyles.css">
+    <link rel="stylesheet" href="/src/nav/navStyles.css">
+    <link id="pay-stylesheet" rel="stylesheet" href="/src/MetodosPagoEnvios/Metodopago.css">
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title>Metodos de Pago y Envio</title>
+</head>
+<body>
+    <header class="row">
+        <div class="col">
+            <div id="navPrincipal"></div>
+        </div>
+    </header>
+    <a class="return-link" href="/index.html">&lt; COMPRAR</a>   
+        <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+        <input type="checkbox" name="" id="toggle">
+        <div class="container-pagos">
+            <section class="envios">
+                <h2>Envíos</h2>
+                <p>ASTRO realiza envíos únicamente dentro del territorio argentino, a la dirección especificada durante la compra.</p>
+                <h3>Recepción de Pedidos</h3>
+                <ul>
+                    <li><strong>Retiro en Sucursal de ASTRO:</strong> Esta opción es gratuita y está disponible en nuestros locales. <a id="ubication-envio" href="/src/Ubicacion/ubicacion.html">Consulta ubicaciones aquí</a>.</li>
+                    <li><strong>Retiro en Sucursal/Punto OCA:</strong> Para compras inferiores a $40.000, el costo de envío es de $1500. Para compras superiores, el retiro en sucursal no tiene costo. El tiempo estimado de entrega es de 2 a 7 días hábiles.</li>
+                    <li><strong>Envío a Domicilio Estándar por OCA:</strong> Para compras superiores a $40.000, el envío es gratuito. Para compras menores, el costo es de $1500. El tiempo estimado de entrega es de 2 a 7 días hábiles.</li>
+                    <li><strong>Envío a Domicilio Express por OCA:</strong> Disponible solo para Rosario, CABA y AMBA. Costo de envío: $1500 para compras superiores a $40.000, $2000 para compras menores. Entrega en hasta 48 horas hábiles.</li>
+                    <li><strong>Envío a Domicilio Same Day con MOOVA:</strong> Válido para CABA, AMBA y Rosario de lunes a viernes. Costo de envío: $2000 para compras superiores a $40.000, $2500 para compras menores. Entrega el mismo día hábil si se realiza antes de las 14 hs.</li>
+                    <li><strong><p>(*) Importante: Los tiempos de entrega pueden variar en fechas exclusivamente comerciales como Hot Sale, Día del Padre, Día de la Madre, Cyber Monday y Navidad.</p></li>
+                </ul>
+
+            </section>
+    
+            <section class="medios-pago">
+                <h2>Medios de Pago</h2>
+                <p>Los medios de pago habilitados para comprar en línea en ASTRO son las tarjetas de débito y crédito emitidas en Argentina, E Gift Cards y Mercado Pago.</p>
+                <h3>Opciones de Pago</h3>
+                <ul>
+                    <li><strong>Tarjeta de Crédito:</strong> Accede con todos los bancos  hasta 6 cuotas sin interés.</li>
+                    <li><strong>Tarjeta de Débito:</strong> Accede a todas nuestras promociones con bancos.</li>
+                    <li><strong>Gift Cards:</strong> Puedes utilizar una Gift Card por compra. Si el valor de tu carrito supera el valor de tu Gift Card, podrás usar el saldo disponible y pagar la diferencia con tarjeta.</li>
+                    <li><strong>MODO:</strong> Puedes pagar con la billetera virtual y acceder hasta 6 cuotas sin interés.</li>
+                    <li><strong>Mercado Pago:</strong> Puedes pagar con el saldo disponible en tu cuenta de Mercado Pago, tarjetas de débito y crédito en 1, 3 y 6 cuotas.</li>
+                    <li><strong></strong><p>Es importante tener en cuenta que si eliges Mercado Pago o MODO, no podrás beneficiarte del reintegro ofrecido por el banco con ASTRO.</p></li>
+                </ul>
+            </section>
+    
+            <section class="medios-pago-imagenes">
+                <h3>Medios de Pago</h3>
+                <div class="payment-methods">
+                    <img src="/src/MetodosPagoEnvios/imagenes/visa-logo.png" alt="Visa">
+                    <img src="/src/MetodosPagoEnvios/imagenes/mastercard-logo.png" alt="MasterCard">
+                    <img src="/src/MetodosPagoEnvios/imagenes/paypal-logo.png" alt="PayPal">
+                    <img src="/src/MetodosPagoEnvios/imagenes/modo-logo.png" alt="MODO">
+                    <img src="/src/MetodosPagoEnvios/imagenes/mercado-pago-logo.png" alt="Mercado Pago">
+                </div>
+            </section>
+        </div>
+    <div id="footer-general"></div>
+    <script type="module" src="/src/footer/Footer.js"></script>
+    <script type="module" src="/src/nav/Navrender.js"></script>
+    <script type="module" src="/src/Mode/mode.js"></script>
+</body>
+</html>

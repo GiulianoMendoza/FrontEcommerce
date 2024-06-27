@@ -1,0 +1,122 @@
+:root {
+    --black: #070410;
+    --Tropicalindigo: #9a8be5;
+    --darkp: #0E0821;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.footer-general {
+    color: var(--Tropicalindigo);
+    background: var(--darkp);
+    margin-top: 20px;
+}
+.footer-container {
+    max-width: 100%;    
+    padding: 0 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.footer-logo img {
+    max-width: 100px;
+    color: var(--Tropicalindigo);
+}
+.footer-logo h4{
+    margin-left: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links li {
+    margin: 5px 0;
+    text-align: center;
+    
+}
+.footer-links a {
+    color: var(--Tropicalindigo);
+    text-decoration: none;
+
+}
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-social li {
+    display: absolute;
+    margin-right: 10px;
+}
+.footer-social li a i{
+    color: var(--Tropicalindigo);
+    text-decoration: none;
+}
+.footer-disclaimer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.41);
+}
+.imagen-con-color {
+    filter: hue-rotate(250deg);
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-logo h4 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .footer-logo img {
+        max-width: 60px; 
+    }
+
+    .footer-links li,
+    .footer-social li {
+        margin: 1px 0; 
+        margin-top: 10px;
+    }
+
+    .footer-logo h4 {
+        font-size: 12px;
+    }
+    .footer-social li a i{
+        font-size: 12px;
+    }
+    .footer-links{
+        margin-top: 15px;
+    }
+    .footer-links li {        
+        font-size: 12px;
+    }
+}
+@media (max-width: 468px) {
+    .footer-logo img {
+        max-width: 60px; 
+    }
+
+    .footer-links li,
+    .footer-social li {
+        margin: 3px 0; 
+        margin-top: 10px;
+    }
+
+    .footer-logo h4 {
+        font-size: 12px;
+    }
+    .footer-social li a i{
+        font-size: 12px;
+    }
+    .footer-links li {
+        margin: 13px 0;
+        font-size: 12px;
+    }
+}
